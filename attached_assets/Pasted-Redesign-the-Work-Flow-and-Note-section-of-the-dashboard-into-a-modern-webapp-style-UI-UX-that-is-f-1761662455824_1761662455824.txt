@@ -1,0 +1,83 @@
+Redesign the Work Flow and Note section of the dashboard into a modern, webapp-style UI/UX that is fully responsive and visually appealing.
+
+🎯 Main Goals
+
+Fix issue where added jobs are not visible — ensure jobs appear properly under each Post Type.
+
+Completely improve the UI/UX of both the Work Flow and Note sections.
+
+Design must look like a real modern web application dashboard, not a basic HTML layout.
+
+Must be 100% responsive for desktop, tablet, and mobile.
+
+💡 Work Flow Section
+
+Each Post Type should appear as a card or button in a clean grid layout.
+
+When clicked:
+
+All other posts fade out or blur.
+
+The clicked post moves to center with smooth animation.
+
+Its Jobs appear below or around it (visible, animated, properly aligned).
+
+A close (❌) button restores the full view.
+
+Each Post and Job card should have:
+
+Rounded corners, subtle shadows, hover animation.
+
+Consistent color theme (modern red + white or red + dark gray).
+
+Animated transitions using Framer Motion or CSS.
+
+Add/Edit/Delete buttons for Admin should be small, stylish icons (e.g. Lucide or Heroicons).
+
+🗒️ Note Section
+
+Create a simple yet elegant Note board below the workflow.
+
+Each note should appear as a card with:
+
+User name, date, and message.
+
+Option to add/edit/delete notes (for admin).
+
+Use smooth animations when adding/removing notes.
+
+Use Tailwind’s modern typography + soft background gradients.
+
+🎨 Design Language
+
+Use Tailwind CSS + Framer Motion.
+
+Use a clean dashboard layout with a sidebar or top bar (optional).
+
+Use consistent spacing (p-4, gap-4) and grid/flex layouts.
+
+Use Google Fonts (e.g. Inter, Poppins) for a modern feel.
+
+Add light shadows, border radius (rounded-2xl), and hover scale effects.
+
+⚙️ Tech Stack
+
+Tailwind CSS
+
+Framer Motion or simple CSS transitions
+
+LocalStorage or IndexedDB for saving posts, jobs, and notes
+
+Responsive grid layout with flexbox or CSS grid
+
+✅ Final Output
+
+Work Flow and Notes both visible in same dashboard section.
+
+100% responsive (desktop/tablet/mobile).
+
+Smooth animations and transitions.
+
+Clean, modern webapp-like UI/UX that feels polished and professional.
+
+All jobs visible correctly under their respective post type.

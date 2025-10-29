@@ -1,0 +1,87 @@
+🧠 Prompt for "Work Flow" & "Video Upload Time" Modules (with Notes + Admin Control)
+
+Add two new modules after the Performance Dashboard:
+1️⃣ Work Flow
+2️⃣ Video Upload Time
+Both modules must be accessible from the left menu and controllable (ON/OFF) from the Admin Settings.
+
+🧩 1️⃣ Work Flow
+
+Goal: Visual dashboard for assigning job categories and tracking tasks among team members.
+
+Features:
+
+Admin can create multiple work categories (e.g. Desk Reporter, Video Editor, Mojo Reporter, etc.).
+
+Each category can have multiple job blocks like “JOB 1”, “JOB 2”, etc.
+
+When a category is clicked, its connected jobs visually appear (like a node diagram — see reference image).
+
+Use connecting lines or flow arrows to show task flow between jobs.
+
+All data should be stored locally (no server) and remain even after reload.
+
+Admin Controls:
+
+Admin can Add/Edit/Delete categories and jobs.
+
+Only Admin can edit the Work Flow section.
+
+Moderators and users can view only.
+
+Notes Section:
+
+Below the Work Flow, add a NOTE section.
+
+Any user (Admin or Moderator) can add/edit/delete notes — visible to all.
+
+Notes should be styled like boxes with “To: [Person Name]” and message area.
+
+Notes auto-save locally.
+
+Design:
+
+Red rounded buttons for each category and job (like image).
+
+Smooth animations when a category is opened.
+
+Notes area styled as gray rounded boxes with editable content.
+
+🕒 2️⃣ Video Upload Time
+
+Goal: Manage and view daily upload schedule for all video categories.
+
+Table Columns:
+
+Video Category | Channel (YT) | Page (FB) | Script/Footage Deliver Time | Upload Time
+
+
+Features:
+
+Admin can Add/Edit/Delete rows.
+
+Moderators can only view.
+
+Auto-save data locally.
+
+Option to print/export to PDF with title:
+
+Daily Our Bangladesh
+Video Upload Time Schedule
+
+
+The design should look like the example table provided.
+
+⚙️ Admin Settings Controls
+
+In the Admin Settings page, add:
+
+Toggle switches:
+
+✅ Show/Hide “Work Flow”
+
+✅ Show/Hide “Video Upload Time”
+
+Only Admin can toggle these options.
+
+When OFF — the feature is hidden from all menus.

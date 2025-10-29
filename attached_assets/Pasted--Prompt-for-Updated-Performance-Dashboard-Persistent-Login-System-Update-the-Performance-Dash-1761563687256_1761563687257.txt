@@ -1,0 +1,39 @@
+🧠 Prompt (for Updated Performance Dashboard & Persistent Login System)
+Update the Performance Dashboard section of the web app with the following features and structure:
+📊 Dashboard Table Columns
+Add or reorder columns exactly as follows:
+SL | Date | Link | Title | Views | Reach | Engagement | Voice Artist | Script Writer | Video Editor | Topic Selector | Mojo Reporter | Jela Reporter | Photo Card | SEO | Website News | Content Status | Actions
+🗓️ Date Column
+•	Include a Date input field for each content entry.
+•	Default value = current date (auto-filled when new entry added).
+•	Allow manual change via date picker.
+•	The date helps in monthly filtering and report generation.
+💾 Data Persistence
+•	All entered data (Performance, Employee Data, Jela Reporter Data) must be saved automatically in LocalStorage or IndexedDB.
+•	Data should not be deleted or reset automatically — even after page reload, browser close, or device restart.
+•	Only Admin can manually delete or reset data from the “Admin Settings” panel.
+•	If “Moderator” logs in, the data remains read/write but non-deletable.
+🔐 Persistent Login System
+•	Once an Admin or Moderator logs in, the session stays active until they manually log out.
+•	Even if the page reloads or the browser closes, the user remains logged in (using LocalStorage or SessionStorage).
+•	Show “Logout” button in the top-right corner.
+•	After clicking Logout → clear session and return to login page.
+🧱 Actions Column
+•	Each row should have an “Actions” menu with:
+o	✏️ Edit
+o	🗑️ Delete (Admin only)
+o	📄 View Details
+•	Show confirmation popup before deleting any row.
+🎨 Design
+•	Use Tailwind CSS for a clean, dashboard-style look.
+•	Add a subtle highlight for the “Date” and “Content Status” columns.
+•	Table must be responsive for desktop and mobile.
+•	Keep consistent design with Employee Data and Jela Reporter Data sections.
+⚙️ Permissions Recap
+•	Admin: Full access (Add/Edit/Delete, Reset Data, Logout).
+•	Moderator: Can Add/Edit, Logout, but cannot delete or reset.
+✅ Summary
+•	Data from all sections remains permanently saved locally.
+•	Users stay logged in until they log out manually.
+•	
+

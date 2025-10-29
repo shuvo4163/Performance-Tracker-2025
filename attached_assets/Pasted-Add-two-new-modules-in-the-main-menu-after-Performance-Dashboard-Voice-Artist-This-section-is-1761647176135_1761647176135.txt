@@ -1,0 +1,138 @@
+Add two new modules in the main menu after Performance Dashboard:
+
+🎙️ Voice Artist
+
+This section is designed to manage external voice artists and calculate their monthly bills automatically.
+
+1️⃣ Voice Artist Setup
+
+Section: “Add New Voice Artist”
+
+Fields:
+
+Name
+
+Phone Number
+
+Per Minute Voice Rate (visible and editable only by Admin)
+
+Notes
+
+Only Admin can:
+
+Add new artists
+
+Edit or delete existing ones
+
+View per-minute rate field
+
+Display existing artists in a table:
+
+SL | Name | Phone | Rate (Admin only) | Notes | Actions
+
+2️⃣ Voice Work Entry
+
+Section title: “Voice Artist Work Records”
+
+Fields:
+
+Date (auto date picker)
+
+Title (content title)
+
+Name (Dropdown — only from the artist names added earlier)
+
+Minute
+
+Second
+
+Total Min (auto-calculated = minute + second/60)
+
+Each entry should be stored automatically (local storage/IndexedDB).
+
+The “Total Min” and “Total Bill” should update automatically based on the artist’s rate.
+
+3️⃣ Auto Bill Report (Admin Only)
+
+Section title: “Voice Artist Bill”
+
+Shows a summarized report grouped by artist and month:
+
+Daily Our Bangladesh
+Voice Artist Bill Month of [Selected Month]
+SL | Name | Total Min | Total Taka
+
+
+Auto-calculates Total Taka = Total Min × Per Minute Rate
+
+Show Total Taka (sum of all artists) at bottom.
+
+Include a Print Bill button to export the table as a printable report (PDF/print window).
+
+Only Admin can view this bill section.
+
+📅 Daily Attendance
+
+This section manages daily attendance using the existing Employee Database.
+
+1️⃣ Attendance Record
+
+Automatically pull all employees from the Employee Data Table.
+
+Fields:
+
+SL
+
+Name
+
+Employee ID
+
+Designation
+
+Date
+
+In Time
+
+Out Time
+
+Working Hours (auto: Out - In)
+
+Status (Present/Absent/Late/Half-day/Leave)
+
+Attendance data should be saved locally (LocalStorage/IndexedDB).
+
+Any user (Admin or Moderator) can mark attendance.
+
+Allow export to Excel or print.
+
+⚙️ Admin Settings Control
+
+Add two new toggle switches under Admin Settings → Feature Control:
+
+[ ] Enable Voice Artist Module  
+[ ] Enable Daily Attendance Module
+
+
+When toggled OFF, the corresponding menu options disappear from the sidebar/dashboard.
+
+When toggled ON, they reappear with all saved data intact.
+
+State should persist across reloads and logins.
+
+🧩 Access Rules
+
+Admin: Full access (add/edit/delete/view all + rate visible)
+
+Moderator: Can add or edit voice work records & mark attendance, but cannot see or edit per-minute rates.
+
+Both modules’ data persist even after reload (no auto delete).
+
+🎨 UI Suggestions
+
+Use Tailwind CSS + minimal dashboard layout
+
+Tabs for: “Voice Artist Setup”, “Voice Work Entry”, and “Voice Artist Bill”
+
+Smooth transitions with modals for adding/editing
+
+Print layout same as your sample (centered title, clean border table)

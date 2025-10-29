@@ -1,0 +1,85 @@
+Build an interactive Work Flow module that works exactly like the given description and example image.
+
+⚙️ Main Structure
+
+The Work Flow page should first allow the Admin to:
+
+➕ Add new Post Type (example: Desk Reporter, Mojo Reporter, etc.)
+
+➕ Add multiple Jobs under each Post Type.
+
+Each Post Type and its Jobs are stored locally (LocalStorage/IndexedDB).
+
+Jobs are visually linked to their Post Type.
+
+🎬 User Interaction
+
+Display all Post Types (buttons) on the Work Flow dashboard.
+
+When a user clicks on any Post Type:
+
+All other Post Types become hidden or fade out.
+
+The clicked Post Type stays centered on screen.
+
+Its related Jobs appear around it with motion animation (smooth transition or radial layout).
+
+A small ❌ (close) button appears beside the active Post Type.
+
+When the ❌ button is clicked:
+
+The Jobs disappear with animation.
+
+All hidden Post Types reappear.
+
+The layout returns to the original state.
+
+💾 Data Management
+
+All Post Types and their Jobs must be saved in LocalStorage (persistent after reload).
+
+Admin can:
+
+Edit or delete a Post Type.
+
+Add/edit/delete jobs for each post.
+
+Moderator and general users can only view.
+
+🧭 Design & Animation
+
+Use Tailwind CSS + Framer Motion (or simple CSS transitions) for animation.
+
+Buttons:
+
+Post buttons = bright red (#FF0000), rounded, bold white text.
+
+Job buttons = slightly smaller red buttons connected with yellow lines.
+
+Motion animation:
+
+Jobs spread out radially or in a circular layout around the clicked Post Type.
+
+Smooth fade/slide transitions when showing or hiding jobs.
+
+Add a title “Work Flow” at the top (centered).
+
+Keep the layout responsive for desktop and tablet view.
+
+🔒 Access Control
+
+Only Admin can:
+
+Add / Edit / Delete Post Types and Jobs.
+
+Moderator and other users:
+
+Can only view and interact (click to open/close Post Jobs).
+
+Data persists after reload or logout.
+
+📝 Optional Note Section (below the flow)
+
+A simple editable “Note” area where all users can add small messages.
+
+Notes auto-save locally and are visible to everyone.
